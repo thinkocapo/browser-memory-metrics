@@ -13,6 +13,13 @@ metric, so you can chart memory over a session and catch gradual growth (the
 
 ---
 
+![Sentry Application Metrics view charting browser.memory.heap_utilization and browser.memory.heap_used over a session, with per-sample trace IDs and aggregate values](docs/heap-metrics-dashboard.png)
+
+*What it looks like in Sentry: the two gauges in the Application Metrics view —
+`browser.memory.heap_utilization` (top) and `browser.memory.heap_used` (bottom).
+Each sample carries a trace ID, so you can jump straight to the trace that was
+running when the reading was taken.*
+
 ## The one line that matters
 
 Everything here exists to support a single call:
